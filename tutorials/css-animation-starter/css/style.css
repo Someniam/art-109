@@ -1,0 +1,42 @@
+
+
+
+.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.square{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover{
+    background-color:green;
+    transform:rotate(40deg);
+}
+
+.button-div{
+    text-align:center;
+}
+
+.button{
+    background-color: greenyellow;
+    padding:9px;
+    margin: 50px auto;
+    display:block;
+    width:100px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+    
+}
+.button:hover{
+    background-color: blueviolet;
+    color: antiquewhite;
+    transform: scale(1.5);
+}
