@@ -45,6 +45,24 @@ main {
     background-color: white;
     padding: 2rem;
     text-align: justify;
+    border: 4px solid;
+    border-color: #f3530e #a0db29 #fcd31e #43b0da;
+    border-style: dashed;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 4px rgb(100, 7, 50, 0.5);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.5rem;
+    border: 2px rgb(0, 0, 0) solid;
+    border-style: groove;
+}
+
+.portfolio-item h3 {
+    margin: 1rem;
 }
 
 .portfolio-section{
