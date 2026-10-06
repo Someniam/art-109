@@ -1,8 +1,23 @@
 
+body{
+    animation: change-color 4s infinite alternate;
+}
 
+@keyframes change-color{
+    from {background-color: antiquewhite;}
+    to {background-color: aquamarine;}
+}
 
 .title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 90px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew{
+    0% {transform: skew(0deg 0deg);}
+    100% {transform: skew(30deg 30deg);}
 }
 
 .square{
@@ -52,17 +67,4 @@
 
 .ellipse:hover{
     transform:rotate3d(1,2,3,230deg);
-}
-
-@keyframes color-animation {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}
-
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: color-animation;
-    animation-duration: 4s;
 }
