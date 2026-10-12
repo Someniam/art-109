@@ -1,0 +1,59 @@
+/*CSS resets */
+
+/* color palette*/
+:root {
+    --bg-color-1: #640732;
+    --bg-color-2: #ffffff; 
+    --font: ##ffe4c4;
+    --accent-1: #f3530e;
+    --accent-2: #a0db29;
+    --accent-3: #fcd31e; 
+    --accent-4: #43b0da;
+    --dark: #ffe4c480;
+}
+
+/*css resets*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*respect user font size preferences*/
+html {
+    font-size: 100%;
+
+}
+
+/*make images responsive*/
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*general css*/
+
+body {
+    background-color: var(--bg-color-1);
+    color: var(--font);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 5rem 2rem;
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 75rem;
+    margin: 5rem auto;
+
+}
+
+.about-content h2, .portfolio-content h2, .contact-content h2 {
+    margin: 3rem 0;
+}
+
+footer {
+    padding: 5rem 2rem;
+}
