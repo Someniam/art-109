@@ -57,3 +57,17 @@ header {
 footer {
     padding: 5rem 2rem;
 }
+
+footer img {
+    display: inline;
+    max-width: 2rem;
+    margin: 0 .5rem;
+}
+
+
+/*~~~~~flex-styling~~~~~~*/
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
