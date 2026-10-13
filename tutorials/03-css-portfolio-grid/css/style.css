@@ -3,16 +3,23 @@
 /* color palette*/
 :root {
     --bg-color-1: #640732;
-    --bg-color-2: #ffffff; 
-    --font: ##ffe4c4;
+    --bg-color-2: #ffffff;
+    --font: #ffe4c4;
     --accent-1: #f3530e;
     --accent-2: #a0db29;
-    --accent-3: #fcd31e; 
+    --accent-3: #fcd31e;
     --accent-4: #43b0da;
     --dark: #ffe4c480;
 }
 
 /*css resets*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -42,16 +49,42 @@ body {
 
 header {
     padding: 5rem 2rem;
+
 }
 
-.about-content, .portfolio-content, .contact-content {
+header h1 {
+    text-shadow: 0 1px 0px #43b0da, 1px 0 0px #43b0da, 1px 2px 1px #43b0da, 2px 1px 1px #43b0da, 2px 3px 2px #43b0da, 3px 2px 2px #43b0da, 3px 4px 2px #43b0da, 4px 3px 3px #43b0da, 4px 5px 3px #43b0da, 5px 4px 2px #43b0da, 5px 6px 2px #43b0da, 6px 5px 2px #43b0da, 6px 7px 1px #43b0da, 7px 6px 1px #43b0da, 7px 8px 0px #43b0da, 8px 7px 0px #43b0da, 2px 2px 2px rgba(206, 89, 55, 0);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font);
+    margin: 0;
+    transition: all .5s ease;
+}
+
+nav a:hover {
+    color: var(--accent-3);
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
     max-width: 75rem;
     margin: 5rem auto;
 
 }
 
-.about-content h2, .portfolio-content h2, .contact-content h2 {
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2 {
     margin: 3rem 0;
+}
+
+.portfolio-item {
+    padding: 1rem;
+    background-color: var(--font);
+    color: var(--bg-color-1);
 }
 
 footer {
@@ -70,4 +103,16 @@ footer img {
 .flex-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-item-grid {
+    flex: 0 1 24rem;
+    
 }
