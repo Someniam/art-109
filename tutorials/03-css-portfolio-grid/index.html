@@ -9,12 +9,19 @@
 </head>
 
 <body>
-    <header class="flex-container">
-        <h1>Puck Reverie</h1>
-        <nav>
-            <a href="#about-section">About</a>
-            <a href="#portfolio-section">Portfolio</a>
-            <a href="#contact-section">Contacts</a>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Puck Reverie</h1>
+            </div>
+            <div class="nav">
+                <button class="hamburger">⋮</button>
+                <ul class="nav-menu">
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#portfolio-section">Portfolio</a></li>
+                    <li><a href="#contact-section">Contacts</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -31,69 +38,81 @@
             <div class="portfolio-content">
                 <h2>My Work</h2>
                 <div class="flex-container-grid">
-                <div class="portfolio-item flex-item-grid">
-                    <img src="images/mini-tech-museum-painted.jpg"
-                        alt="A 3D printed miniature building of the Tech Museum of Innovation."
-                        srcset="images/mini-tech-museum-painted-640.jpg 640w,
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/mini-tech-museum-painted.jpg"
+                            alt="A 3D printed miniature building of the Tech Museum of Innovation." srcset="images/mini-tech-museum-painted-640.jpg 640w,
                         images/mini-tech-museum-painted-920.jpg 920w,
                         images/mini-tech-museum-painted.jpg 1200w">
-                    <h3>Mini Tech Museum</h3>
-                    <p>This is a 3D printed version of the Tech Museum of Innovation in San Jose. I created the model in
-                        Minecraft, then I exported the world into Mineways, then I exported it again into Flashpoint. I
-                        then exported it once again into a file format for 3D printers and printed it out. I then
-                        painted the model to resemble the actual building. Originally made for my Intro to Digital Media
-                        Art class in Spring 2024.</p>
-                </div>
-                <div class="portfolio-item flex-item-grid">
-                    <img src="images/somi-and-lumi.jpg" alt="A drawing of my cartoon self holding a star plushie."
-                    srcset="images/somi-and-lumi-640.jpg 640w,
+                        <h3>Mini Tech Museum</h3>
+                        <p>This is a 3D printed version of the Tech Museum of Innovation in San Jose. I created the
+                            model in
+                            Minecraft, then I exported the world into Mineways, then I exported it again into
+                            Flashpoint. I
+                            then exported it once again into a file format for 3D printers and printed it out. I then
+                            painted the model to resemble the actual building. Originally made for my Intro to Digital
+                            Media
+                            Art class in Spring 2024.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/somi-and-lumi.jpg" alt="A drawing of my cartoon self holding a star plushie."
+                            srcset="images/somi-and-lumi-640.jpg 640w,
                     images/somi-and-lumi-920.jpg 920w,
                     images/somi-and-lumi.jpg 1200w">
-                    <h3>Me and Lumi</h3>
-                    <p>This is a drawing of my "fursona" holding my favorite plushie: Lumi from Lumi and the Great Big
-                        Galaxy. It was done as a part of my Intro to Drawing class in Spring 2025. The species I chose
-                        to represent myself with was a pakicetus, an ancestor of the modern day whale.</p>
-                </div>
-                <div class="portfolio-item flex-item-grid">
-                    <img src="images/puck-and-friends.jpg" alt="a drawing of Puck Reverie and his friends from OK KO; they're wearing fancy outfits"
-                        srcset="images/puck-and-friends-640.jpg 640w,
+                        <h3>Me and Lumi</h3>
+                        <p>This is a drawing of my "fursona" holding my favorite plushie: Lumi from Lumi and the Great
+                            Big
+                            Galaxy. It was done as a part of my Intro to Drawing class in Spring 2025. The species I
+                            chose
+                            to represent myself with was a pakicetus, an ancestor of the modern day whale.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/puck-and-friends.jpg"
+                            alt="a drawing of Puck Reverie and his friends from OK KO; they're wearing fancy outfits"
+                            srcset="images/puck-and-friends-640.jpg 640w,
                         images/puck-and-friends-920.jpg 920w,
                         images/puck-and-friends.jpg 1200w">
-                    <h3>Happy New Year 202X!</h3>
-                    <p>New Art! I drew Puck Reverie and his friends & acquaintances taking a selfie at Grand
-                        SymphonyLand (Disneyland) while celebrating the New Year! He's with his best friends Sparko,
-                        Punching Judy, Sally Harmony [note: Sally is my Original Character for a fanfiction idea that I
-                        have planned] and his sweetheart Glitter Starlight! They met up with the Point
-                        Prep crew as well! Phoebe, Demon Queenie, Purrcival and Chiff are all present! I didn't draw a
-                        background for it yet but I promise I'll learn to do them someday.</p>
-                    <p>Original text from DeviantArt.</p>
-                    <a href="https://www.deviantart.com/someniam/art/Happy-New-Year-202X-1172302006">Link to the
-                        pic.</a>
-                </div>
-                <div class="portfolio-item flex-item-grid">
-                    <img src="images/yaqui-puck-reverie.jpg"
-                        alt="A drawing of the character Puck Reverie wearing a mix of Catholic and Yaqui clothing."
-                        srcset="images/yaqui-puck-reverie-480.jpg 480w,
+                        <h3>Happy New Year 202X!</h3>
+                        <p>New Art! I drew Puck Reverie and his friends & acquaintances taking a selfie at Grand
+                            SymphonyLand (Disneyland) while celebrating the New Year! He's with his best friends Sparko,
+                            Punching Judy, Sally Harmony [note: Sally is my Original Character for a fanfiction idea
+                            that I
+                            have planned] and his sweetheart Glitter Starlight! They met up with the Point
+                            Prep crew as well! Phoebe, Demon Queenie, Purrcival and Chiff are all present! I didn't draw
+                            a
+                            background for it yet but I promise I'll learn to do them someday.</p>
+                        <p>Original text from DeviantArt.</p>
+                        <a href="https://www.deviantart.com/someniam/art/Happy-New-Year-202X-1172302006">Link to the
+                            pic.</a>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/yaqui-puck-reverie.jpg"
+                            alt="A drawing of the character Puck Reverie wearing a mix of Catholic and Yaqui clothing."
+                            srcset="images/yaqui-puck-reverie-480.jpg 480w,
                         images/yaqui-puck-reverie-720.jpg 720w,
                         images/yaqui-puck-reverie.jpg 825w">
-                    <h3>Yaqui Puck Reverie</h3>
-                    <p>I drew Puck Reverie in a mix of traditional Catholic and Yaqui clothing. I wanted to create some headcanons about his culture cause I'm part Yaqui and cause he has little written about him in canon.
-                        Void. [Note: Puck Reverie is my namesake character; when I was watching OK KO on Cartoon
-                        Network, I was immediately drawn to him and wanted to learn more about him. I was disheartened
-                        to learn that there is little information about him in canon which is why I decided to come up
-                        with my own interpretations and headcanons for him.</p>
-                    <p>Original art piece from DeviantArt.</p>
-                    <a href="https://www.deviantart.com/someniam/art/Yaqui-Puck-Reverie-1305315902">Link to the pic.</a>
-                </div>
-                <div class="portfolio-item flex-item-grid">
-                    <img src="images/wild-guinea-pig.jpg" alt="A pencil sketch of a wild guinea pig, or aperea."
-                    srcset="images/wild-guinea-pig-640.jpg 640w,
+                        <h3>Yaqui Puck Reverie</h3>
+                        <p>I drew Puck Reverie in a mix of traditional Catholic and Yaqui clothing. I wanted to create
+                            some headcanons about his culture cause I'm part Yaqui and cause he has little written about
+                            him in canon.
+                            Void. [Note: Puck Reverie is my namesake character; when I was watching OK KO on Cartoon
+                            Network, I was immediately drawn to him and wanted to learn more about him. I was
+                            disheartened
+                            to learn that there is little information about him in canon which is why I decided to come
+                            up
+                            with my own interpretations and headcanons for him.</p>
+                        <p>Original art piece from DeviantArt.</p>
+                        <a href="https://www.deviantart.com/someniam/art/Yaqui-Puck-Reverie-1305315902">Link to the
+                            pic.</a>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/wild-guinea-pig.jpg" alt="A pencil sketch of a wild guinea pig, or aperea."
+                            srcset="images/wild-guinea-pig-640.jpg 640w,
                     images/wild-guinea-pig-920.jpg 920w,
                     images/wild-guinea-pig.jpg 1200w">
-                    <h3>Wild Guinea Pig</h3>
-                    <p>This is a drawing of a wild guinea pig I made a couple of years ago. It's a sketch I did with
-                        pencils in my sketchbook based on a reference photo.</p>
-                </div>
+                        <h3>Wild Guinea Pig</h3>
+                        <p>This is a drawing of a wild guinea pig I made a couple of years ago. It's a sketch I did with
+                            pencils in my sketchbook based on a reference photo.</p>
+                    </div>
                 </div>
             </div>
 
@@ -110,8 +129,9 @@
     <footer class="flex-container">
         <p>&copy;2026 Puck Reverie</p>
         <div class="social-links">
-        <a href="https://x.com/Someniam1"><img src="images/icon-logo-twitter.png" alt="Twitter logo"></a>
-        <a href="https://www.youtube.com/@someniam8021"><img src="images/icon-logo-youtube.png" alt="YouTube logo"></a>
+            <a href="https://x.com/Someniam1"><img src="images/icon-logo-twitter.png" alt="Twitter logo"></a>
+            <a href="https://www.youtube.com/@someniam8021"><img src="images/icon-logo-youtube.png"
+                    alt="YouTube logo"></a>
         </div>
     </footer>
 </body>

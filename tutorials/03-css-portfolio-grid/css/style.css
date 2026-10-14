@@ -45,11 +45,12 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 header {
     padding: 5rem 2rem;
-
+    margin-bottom: 7rem;
 }
 
 header h1 {
@@ -59,19 +60,68 @@ header h1 {
 nav a {
     text-decoration: none;
     color: var(--font);
-    margin: 0;
-    transition: all .5s ease;
+    /* margin: 0;
+    transition: all .5s ease; */
 }
 
 nav a:hover {
     color: var(--accent-3);
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--font);
+    font-size: 3rem;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+    header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+main {
+    margin: 0;
+}
+
+@media (max-width: 1030px) {
+    main {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        margin: 1rem;
+    }
+}
+
 .about-content,
 .portfolio-content,
 .contact-content {
     max-width: 75rem;
-    margin: 5rem auto;
+    margin: 0 auto 7rem auto;
 
 }
 
@@ -85,6 +135,22 @@ nav a:hover {
     padding: 1rem;
     background-color: var(--font);
     color: var(--bg-color-1);
+    border: 4px solid;
+    border-color: var(--accent-1) var(--accent-2) var(--accent-3) var(--accent-4);
+    border-style: dashed;
+    border-radius: 1rem;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+}
+
+.portfolio-item h3 {
+    font-size: 2rem;
+}
+
+.portfolio-item img {
+    border-radius: 0.4rem;
 }
 
 footer {
@@ -114,6 +180,6 @@ footer img {
 }
 
 .flex-item-grid {
-    flex: 0 1 24rem;
+    flex: 1 0 24rem;
     
 }
