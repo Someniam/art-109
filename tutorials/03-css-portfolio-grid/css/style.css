@@ -167,6 +167,7 @@ main {
     border-color: var(--accent-1) var(--accent-2) var(--accent-3) var(--accent-4);
     border-style: dashed;
     border-radius: 1rem;
+    max-width: 30rem;
 }
 
 .portfolio-item p {
