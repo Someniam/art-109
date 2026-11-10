@@ -1,0 +1,70 @@
+/*CSS resets */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #ffe4c4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+header{
+    padding: 3rem 0.3rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(0deg, rgba(255, 228, 196, 1) 0%, rgba(103, 7, 49, 1) 60%);
+    color: #ffe4c4;
+    text-align:center;
+    
+}
+header h1{
+    font-size: 2rem;
+}
+main {
+    
+}
+
+.about-section, .portfolio-section, .contact-section {
+    margin-bottom: 4.5rem;
+
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 60rem;
+    margin: 2rem auto;
+}
+
+.portfolio-item {
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem;
+    text-align: justify;
+    border: 4px solid;
+    border-color: #f3530e #a0db29 #fcd31e #43b0da;
+    border-style: dashed;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 4px rgb(100, 7, 50, 0.5);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.5rem;
+    border: 2px rgb(0, 0, 0) solid;
+    border-style: groove;
+}
+
+.portfolio-item h3 {
+    margin: 1rem;
+}
+
+.portfolio-section{
+    background-color: rgb(240, 240, 255);
+}
