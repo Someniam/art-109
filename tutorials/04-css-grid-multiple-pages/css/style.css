@@ -213,6 +213,12 @@ footer img {
     margin: 0 .5rem;
 }
 
+.project-content a {
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--font);
+}
+
 @media (max-width: 750px){
     footer img {
         max-width: 2rem;
