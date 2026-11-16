@@ -16,7 +16,11 @@ hoverVideos.forEach(video => {
 clickVideos.forEach(video => {
 
     video.addEventListener("click", () => {
-        video.play();
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
     })
    
 })

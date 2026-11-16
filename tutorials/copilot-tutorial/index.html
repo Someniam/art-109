@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#18122b">
+    <title>Disco Bean - Tiny Dance Party</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/animation.js" defer></script>
+</head>
+<body>
+    <main class="party">
+        <header class="intro">
+            <p class="eyebrow">A tiny dance party</p>
+            <h1>Disco Bean</h1>
+            <p>Meet the little bean who just wants to dance.</p>
+        </header>
+
+        <section class="party-card" aria-label="Disco Bean dance party">
+            <div class="dance-stage">
+                <div class="light-beam light-beam-left"></div>
+                <div class="light-beam light-beam-right"></div>
+                <div class="sparkle sparkle-one">✦</div>
+                <div class="sparkle sparkle-two">✧</div>
+                <div class="sparkle sparkle-three">✦</div>
+
+                <div class="dancer" id="dancer" role="img" aria-label="A smiling purple bean dancing">
+                    <div class="antenna"><span></span></div>
+                    <div class="arm arm-left"><span class="hand"></span></div>
+                    <div class="arm arm-right"><span class="hand"></span></div>
+                    <div class="leg leg-left"><span class="shoe"></span></div>
+                    <div class="leg leg-right"><span class="shoe"></span></div>
+
+                    <div class="bean">
+                        <span class="cheek cheek-left"></span>
+                        <span class="cheek cheek-right"></span>
+                        <span class="eye eye-left"></span>
+                        <span class="eye eye-right"></span>
+                        <span class="smile"></span>
+                        <span class="shirt"></span>
+                        <span class="shirt-button"></span>
+                    </div>
+                </div>
+
+                <div class="stage-shadow"></div>
+            </div>
+
+            <div class="controls">
+                <button class="button button-primary" id="dance-button" type="button" aria-pressed="false">
+                    Pause the dance
+                </button>
+                <div class="audio-controls">
+                    <input class="visually-hidden" id="audio-file" type="file" accept="audio/*">
+                    <label class="button button-secondary" for="audio-file">Choose a song</label>
+                    <button class="button button-secondary" id="audio-button" type="button" disabled>
+                        Play audio
+                    </button>
+                </div>
+            </div>
+            <p class="audio-status" id="audio-status" aria-live="polite">
+                Choose an audio file from your device to add your own soundtrack.
+            </p>
+            <audio id="background-audio" loop></audio>
+        </section>
+
+        <footer>
+            <p>Made with CSS animations. Pick a song you have permission to use.</p>
+        </footer>
+    </main>
+</body>
+</html>
